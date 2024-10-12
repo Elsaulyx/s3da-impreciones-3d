@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Montserrat-Regular, sans-serif;
+}
+
+.animate-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+canvas {
+    display: block;
+    background-image: url('imp1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.logo {
+    width: 300px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-bottom: 200}px;
+}
+
+#neon-title {
+    font-size: 4rem;
+    color: #B58d08; /* Puedes cambiar este color si deseas */
+    text-shadow: 0 0 5px #B58d08, 
+                 0 0 10px #007a80, 
+                 0 0 20px #769aa5, 
+                 0 0 30px #0b245d, 
+                 0 0 40px #82032c;
+    z-index: 1;
+}
