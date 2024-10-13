@@ -1,6 +1,20 @@
 const canvas = document.getElementById('particleCanvas');
 const ctx = canvas.getContext('2d');
 
+// Detectar movimiento táctil
+window.addEventListener('touchmove', function(event) {
+    mouse.x = event.touches[0].clientX;
+    mouse.y = event.touches[0].clientY;
+});
+
+function init() {
+    particlesArray = [];
+    let numberOfParticles = (canvas.width * canvas.height) / (window.innerWidth < 768 ? 6000 : 3000); // Menos partículas en móviles
+    // El resto del código sigue igual
+}
+
+
+
 // Ajustar tamaño del canvas a la ventana
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
