@@ -264,3 +264,44 @@ canvas {
 .topnav:hover + .image-container {
     margin-top: 150px; /* Aumenta el margen superior para que la imagen se desplace hacia abajo */
 }
+/* Estilos para pantallas grandes (tablets y desktop) */
+@media (min-width: 768px) {
+    #neon-title {
+        font-size: 15rem;
+        top: 30%;
+        left: 20%;
+    }
+
+    .topnav {
+        padding: 10px 0;
+    }
+
+    .topnav a {
+        padding: 10px 50px;
+        font-size: 1rem;
+    }
+}
+
+/* Estilos para pantallas pequeñas (celulares) */
+@media (max-width: 767px) {
+    #neon-title {
+        font-size: 5rem; /* Reducir el tamaño del texto */
+        top: 20%; /* Ajustar la posición vertical */
+        left: 5%; /* Ajustar la posición horizontal */
+    }
+
+    .topnav {
+        flex-direction: column; /* Hacer que el menú sea vertical */
+        height: auto; /* Ajustar el tamaño automáticamente */
+    }
+
+    .topnav a {
+        width: 100%; /* Los enlaces ocupan todo el ancho */
+        padding: 10px; /* Espaciado reducido */
+        font-size: 0.9rem; /* Tamaño de texto más pequeño */
+    }
+
+    canvas {
+        background-size: cover;
+    }
+}
